@@ -1,0 +1,336 @@
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+}
+
+h1 { font-size: 3.5em;}
+h2 { font-size: 2.7em;}
+h3 {font-size: 2em;}
+p {font-size: 1.25em;}
+ul {list-style: none;}
+li {font-size: 1.25em;}
+
+.color-porcion { color: #0BC70A;}
+
+button {
+    font-size: 1.5em;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: 1px solid rgb(0, 0, 0, 0.5);
+    box-shadow: 2px 2px 10px rgb(0, 0, 0, 0.5);
+    color: white;
+    background-color: #0BC70A;
+}
+
+button:hover {
+    background-color: #0b9b0b;
+}
+
+.container {
+    max-width: 1400px;
+    margin: auto;
+}
+
+header {
+    background-color: rgb(245, 245, 245);
+}
+
+header .logo {
+    margin: 0;
+    padding: 25px 30px;
+    color: #0BC70A;
+    font-weight: bold;
+    font-size: 1.6em;
+}
+
+header .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header nav {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 25px;
+}
+
+header a {
+    padding: 5px 12px;
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}
+
+header a:hover {
+    color: #0BC70A;
+}
+
+#hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    height: 95vh;
+    background-image: linear-gradient(
+        0deg,
+        rgb(0,0,0,0.5),
+        rgb(0,0,0,0.5)
+    )
+    ,url("image/hero.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+#hero h1 {
+    color: white;
+}
+
+#hero button {
+    font-size: 1.75em;
+}
+
+#VerdurasYA .container {
+    text-align: center;
+    padding: 200px 12px;
+}
+
+#productos {
+    background-color: rgb(30,30,30);
+    color: white;
+    text-align: center;
+}
+
+#productos .container {
+    padding: 150px 12px;
+}
+
+#productos h2 {
+    margin-top: 0px;
+    font-size: 3.2em;
+}
+
+#productos p {
+    display: none;
+}
+
+#productos .card {
+    background-size: cover;
+    background-position: center center;
+    padding: 50px 10px;
+    margin: 30px;
+    border-radius: 15px;
+}
+
+.card:first-child {
+    background-image: linear-gradient(
+        0deg,
+        rgb(0,0,0,0.5),
+        rgb(0,0,0,0.5)
+    )
+    ,url("image/verduleria-3.jpg");
+}
+
+.card:nth-child(2) {
+    background-image: linear-gradient(
+        0deg,
+        rgb(0,0,0,0.5),
+        rgb(0,0,0,0.5)
+    )
+    ,url("image/verduleria-4.jpg");
+}
+
+.card:nth-child(3) {
+    background-image: linear-gradient(
+        0deg,
+        rgb(0,0,0,0.5),
+        rgb(0,0,0,0.5)
+    )
+    ,url("image/verduleria-5.jpg");
+}
+
+#contactanos .container {
+    text-align: center;
+    padding: 250px 12px;
+}
+
+#contactanos li {
+    margin: 16px 0px;
+    font-weight: bold;
+}
+
+#redes {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: rgb(30,30,30);
+    color: white;
+    height: 80vh;
+}
+
+#redes button {
+    font-size: 5vh;
+}
+
+#redes h2 {
+    font-size: 9vh;
+}
+
+footer {
+    background-color: rgb(245, 245, 245);
+}
+
+footer p {
+    margin: 0px;
+    padding: 12px;
+    color: rgb(100,100,100);
+}
+
+footer .container {
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+/* media */
+
+@media (min-width: 720px) {
+    header {
+        position: fixed;
+        width: 100%;
+    }
+    header .container {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    header nav {
+        flex-direction: row;
+        padding: 0px;
+        padding-right: 20px;
+    }
+    #VerdurasYA .img-container {
+        background-image: linear-gradient(
+            0deg,
+            rgba(0,0,0,0.3),
+            rgba(0,0,0,0.3)
+        ),url("image/verduleria-2.jpg");
+        background-size: cover;
+        background-position: center center;
+        border-radius: 10px;
+        height: 500px;
+        width: 400px;
+    }
+
+    #VerdurasYA .container {
+        display: flex;
+        justify-content: space-evenly;
+    }
+    #VerdurasYA .texto {
+        width: 50%;
+        text-align: initial;
+        padding: 0px 30px;
+        padding-left: 30px;
+        max-width: 600px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    #VerdurasYA h2 {
+        margin-top: 0px;
+    }
+
+    #productos .cartas {
+        display: flex;
+        justify-content: center;
+    }
+    #productos p {
+        display: block;
+        margin-bottom: 30px;
+    }
+    #productos h2 {
+        font-size: 4em;
+    }
+    #productos h3 {
+        margin-top: 0;
+    }
+    #productos .card {
+        padding: 50px;
+        background-size: 100% 150px;
+        background-repeat: no-repeat;
+        background-position-y: 0;
+        background-color: rgba(50,50,50,0.5);
+        box-shadow: 2px 2px 10px rgb(0, 0, 0, 0.5);
+    }
+    .card h3 {
+        white-space: nowrap;
+    }
+    .card:first-child {
+        background-image: linear-gradient(
+            0deg,
+            rgb(0,0,0,0.5),
+            rgb(0,0,0,0.5)
+        )
+        ,url("image/verduleria-3-crop.jpg");
+    }
+    
+    .card:nth-child(2) {
+        background-image: linear-gradient(
+            0deg,
+            rgb(0,0,0,0.5),
+            rgb(0,0,0,0.5)
+        )
+        ,url("image/verduleria-4-crop.jpg");
+    }
+    
+    .card:nth-child(3) {
+        background-image: linear-gradient(
+            0deg,
+            rgb(0,0,0,0.5),
+            rgb(0,0,0,0.5)
+        )
+        ,url("image/verduleria-5-crop.jpg");
+    }
+    #contactanos .img-verdu {
+        background-image: linear-gradient(
+            0deg,
+            rgba(0,0,0,0.3),
+            rgba(0,0,0,0.3)
+        ),url("image/verduleria.jpg");
+        background-size: cover;
+        background-position: center center;
+        border-radius: 10px;
+        height: 500px;
+        width: 600px;
+    }
+    #contactanos .container {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    #contactanos ul {
+        margin-left: 50px;
+    }
+    #redes {
+        padding: 50vh;
+    }
+    footer .container {
+        height: 100px;
+        align-items: center;
+    }
+}
